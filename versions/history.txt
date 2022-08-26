@@ -1,0 +1,49 @@
+
+
+***********************
+1_timelapse_gui_7.4.20.py
+***********************
+- first test version
+
+
+*************************
+2_timelapse_gui_15.4.20.py
+*************************
+- bugfix - "cv2.imread" change to "cv2.imdecode" - input folder can contain special characters
+
+
+*************************
+3_timelapse_gui_20.4.20.py
+*************************
+- bugfix - check if output path have any special characters - otherwise videoWriter will not create the video
+- exception is that the path is the same as a file path. In this case the input argument is not the whole path, but just a video name
+
+
+
+*************************
+4_timelapse_gui_23.4.20.py
+*************************
+- add "cancel" option to cancel the running process such as "checking" and "converting"
+
+
+*************************
+5_timelapse_gui_25.4.20.py
+*************************
+- bugfix of version 3. (covered problem of comparing lower and upped C:\)
+
+
+*************************
+6_timelapse_gui_25.4.20.py
+*************************
+- output folder name cannot contain any special characters even if the path is the home folder. OpenCV does not create the output videofile 
+even if it is located in the folder named with special characters. Known issue. 
+
+
+
+
+
+
+
+
+
+

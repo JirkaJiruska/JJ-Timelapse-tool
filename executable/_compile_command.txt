@@ -1,0 +1,1 @@
+pyinstaller --onefile -i"image.ico" _timelapse_gui.pyw
